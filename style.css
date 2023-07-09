@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.country-container {
+    border: 3px solid purple;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    max-width: 600px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.info-label {
+    color: purple;
+    font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+#countryContainer {
+  text-align: center; 
+}
+
+#countryInput {
+  margin-bottom: 10px;
+}
+
+#countryInfo {
+  margin-top: 20px;
+}
+
+.btn{
+  border: 3px solid purple;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1{
+  color: purple;
+}
+
+.btn1:hover{
+  color: purple;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before{
+  height: 180%;
+}
+
+.chart {
+  width: 1450px;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  padding: 10px;
+}
+
+.bar {
+  width: 110px;
+  background-color: purple;
+  transition: height 0.5s ease;
+}
+
+.bar:hover {
+  background-color: #8a2be2;
+}
+
+.bar-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: auto;
+}
+
+
+.label {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
